@@ -3,6 +3,7 @@ use 5.006;
 use strict;
 use warnings FATAL => 'all';
 use Test::More;
+use File::Spec;
 
 # Ensure a recent version of Test::Pod::Coverage
 my $min_tpc = 1.08;
@@ -17,4 +18,9 @@ eval "use Pod::Coverage $min_pc";
 plan skip_all => "Pod::Coverage $min_pc required for testing POD coverage"
     if $@;
 
-all_pod_coverage_ok();
+#all_pod_coverage_ok();
+
+#use Test::Pod::Coverage tests=>1;
+#warn all_modules;
+#pod_coverage_ok( "Perl::RunEND", "Perl::RunEND is covered" );
+
