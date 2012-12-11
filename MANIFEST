@@ -11,5 +11,4 @@ t/01-test-bin.t
 t/data/My/MyModulePod.pm
 t/data/MyModule.pm
 t/manifest.t
-t/pod-coverage.t
 t/pod.t
